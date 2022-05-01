@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="machine.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GN Decript v1.0</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="header">
+            <h2>GN Decript v1.0</h2>
+        </div>
+
+        <form id="formid" class="form">
+
+            <div class="radios">
+                <div class="radios1">
+                    <input type="radio" id="cifradecesar" name="criptografia" value="Cifra de César"/> Cifra de César<br>
+                    <input type="radio" id="base64" name="criptografia" value="Base 64"/> Base 64
+                </div>
+
+                <div class="radios2">
+                    <input type="radio" id="criptografar" name="opcao" value="Criptografar"/> Criptografar<br>
+                    <input type="radio" id="descriptografar" name="opcao" value="Descriptografar"/> Descriptografar
+                </div>
+            </div>
+
+            <input class="confirmar" type="button" value="Confirmar Opções" onclick="confirmar()"/>
+
+
+
+            <div class="textos">
+                <div class="form-control">
+                    <label id="texto1" for="mensagem">Aguardando Opções</label>
+                    <input type="text" name="texto1" id="mensagem" placeholder="Marque as opções desejadas para dar início" />
+                </div>
+
+                <div class="form-control" id="meio">
+                    <label id="texto2" for="deslocamento">Aguardando Opções</label>
+                    <input type="number" name="texto2" id="shiftInput" placeholder="Marque as opções desejadas para dar início" min="0" max="25">
+                </div>
+
+                <div class="form-control">
+                    <label id="texto3" for="retorno">Aguardando Opções</label>
+                    <input type="text" name="texto3" id="retorno" placeholder="Marque as opções desejadas para dar início" />
+                </div>
+            </div>
+            
+            <input class="executar" id="executar" type="button" value="Executar"/>
+
+        </form>
+    </div>
+
+</body>
+</html>
