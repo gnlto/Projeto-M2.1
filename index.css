@@ -7,11 +7,22 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body{
+    background-image: url("./Assets/zGM5b2.webp");
+    background-size: cover;
+    
+    
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
 body {
-    width: 100%;
+    /*width: 100%;
     min-height: 100vh;
     background: rgb(0,255,220);
-    background: linear-gradient(45deg, rgba(0,255,220,1) 0%, rgba(26,0,255,1) 39%, rgba(219,0,255,1) 82%);
+    background: linear-gradient(45deg, rgba(0,255,220,1) 0%, rgba(26,0,255,1) 39%, rgba(219,0,255,1) 82%);*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,8 +108,8 @@ body {
 }
 
 .confirmar {
-    background-color: #db00ff;
-    border: 2px solid #db00ff;
+    background-color: #36ba01;
+    border: 2px solid #36ba01;
     color: #fff;
     font-size: 14px;
     width: 100%;
@@ -107,8 +118,8 @@ body {
 }
 
 .executar {
-    background-color: #db00ff;
-    border: 2px solid #db00ff;
+    background-color: #36ba01;
+    border: 2px solid #36ba01;
     color: #fff;
     font-size: 14px;
     width: 100%;

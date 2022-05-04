@@ -142,6 +142,16 @@ function confirmar(){
                 = 'A mensagem criptografada aparecerá aqui';
                 
             document.getElementById("executar").value = "Criptografar";
+
+            let encryptBtn = document.getElementById('executar');
+            let eInput = document.getElementById('retorno');
+            let pInput = document.getElementById('mensagem');
+
+            function encrypt(){
+                eInput.value = btoa(pInput.value)
+            } 
+
+            encryptBtn.addEventListener('click', encrypt)
             
         } else if (descriptografar.checked==true){
             //alert("Você escolheu: "+descriptografar.value+" "+cifradecesar.value)
@@ -162,6 +172,17 @@ function confirmar(){
                 = 'A mensagem descriptografada aparecerá aqui';
 
             document.getElementById("executar").value = "Descriptografar";
+
+            let encryptBtn = document.getElementById('executar');
+            let eInput = document.getElementById('retorno');
+            let pInput = document.getElementById('mensagem');
+
+            function encrypt(){
+                eInput.value = atob(pInput.value)
+            } 
+
+            encryptBtn.addEventListener('click', encrypt)
+            
         }
         
     }
